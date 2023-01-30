@@ -1,0 +1,11 @@
+rime-out
+*.pyc
+Icon*
+*.swp
+.DS_Store
+Thumbs.db
+*~
+*.out
+target
+testlib.h
+!common/testlib.h

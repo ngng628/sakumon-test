@@ -1,0 +1,49 @@
+# -*- coding: utf-8; mode: python -*-
+
+## Input generators.
+#c_generator(src='generator.c')
+cxx_generator(src='generator.cpp', dependency=['testlib.h'], flags=['-std=c++17', '-O2'])
+#java_generator(src='Generator.java', encoding='UTF-8', mainclass='Generator')
+#rust_generator(src='generator.rs')
+#go_generator(src='generator.go')
+#script_generator(src='generator.pl')
+
+## Input validators.
+#c_validator(src='validator.c')
+cxx_validator(src='validator.cpp', dependency=['testlib.h'], flags=['-std=c++17', '-O2'])
+#java_validator(src='Validator.java', encoding='UTF-8',
+#               mainclass='tmp/validator/Validator')
+#rust_validator(src='validator.rs')
+#go_validator(src='validator.go')
+#script_validator(src='validator.pl')
+
+## Output judges.
+#c_judge(src='judge.c')
+cxx_judge(src='judge.cpp', dependency=['testlib.h'],
+         variant=testlib_judge_runner)
+#java_judge(src='Judge.java', encoding='UTF-8', mainclass='Judge')
+#rust_judge(src='judge.rs')
+#go_judge(src='judge.go')
+#script_judge(src='judge.py')
+
+## Reactives.
+#c_reactive(src='reactive.c')
+#cxx_reactive(src='reactive.cc', dependency=['testlib.h', 'reactive.hpp'],
+#             variant=kupc_reactive_runner)
+#java_reactive(src='Reactive.java', encoding='UTF-8', mainclass='Judge')
+#rust_reactive(src='reactive.rs')
+#go_reactive(src='reactive.go')
+#script_reactive(src='reactive.py')
+
+## Extra Testsets.
+# icpc type
+#icpc_merger(input_terminator='0 0\n')
+# icpc wf ~2011
+#icpc_merger(input_terminator='0 0\n',
+#            output_replace=casenum_replace('Case 1', 'Case {0}'))
+#gcj_merger(output_replace=casenum_replace('Case 1', 'Case {0}'))
+id='X'
+#merged_testset(name=id + '_Merged', input_pattern='*.in')
+#subtask_testset(name='All', score=100, input_patterns=['*'])
+# precisely scored by judge program like Jiyukenkyu (KUPC 2013)
+#scoring_judge()

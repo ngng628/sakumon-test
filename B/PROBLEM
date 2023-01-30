@@ -1,0 +1,17 @@
+# -*- coding: utf-8; mode: python -*-
+
+pid='X'
+
+problem(
+  time_limit=1.0,
+  id=pid,
+  title=pid + ": Your Problem Name",
+  #wiki_name="Your pukiwiki page name", # for wikify plugin
+  #assignees=['Assignees', 'for', 'this', 'problem'], # for wikify plugin
+  #need_custom_judge=True, # for wikify plugin
+  #reference_solution='???',
+  )
+
+atcoder_config(
+  task_id=None # None means a spare
+)

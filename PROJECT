@@ -1,0 +1,26 @@
+# -*- coding: utf-8; mode: python -*-
+
+## You can load plugins here.
+use_plugin('rime_plus')
+use_plugin('judge_system.atcoder')
+#use_plugin('judge_system.aoj')
+#use_plugin('judge_system.hacker_rank')
+#use_plugin('wikify')
+#use_plugin('wikify_full')
+
+project(library_dir='common', required_rime_plus_version='1.0.0')
+
+#wikify_config(
+#  url="http://example.com/pukiwiki/",
+#  page="***",
+#  encoding="utf-8",
+#  auth_realm="***",
+#  auth_username="***",
+#  auth_password="***")
+
+atcoder_config(
+  upload_script='***',
+  contest_url='https://***.contest.atcoder.jp/',
+  username='***', password='***',
+  lang_ids={'c': 13, 'cxx': 10, 'java': 3}
+)
