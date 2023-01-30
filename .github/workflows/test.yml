@@ -38,5 +38,3 @@ jobs:
 
     - name: Rime test
       run: rime test --keep_going --jobs 4
-
-  rime: 
