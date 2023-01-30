@@ -1,6 +1,10 @@
-name: Run rime and validation
+name: Rime test
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+    - 'main'
+  pull_request
 
 jobs:
   rime:
@@ -34,3 +38,5 @@ jobs:
 
     - name: Rime test
       run: rime test --keep_going --jobs 4
+
+  rime: 
