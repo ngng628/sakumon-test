@@ -33,4 +33,4 @@ jobs:
       run: python3 -m pip install git+https://github.com/icpc-jag/rime
 
     - name: Rime test
-      run: rime test -k
+      run: rime test --keep_going --jobs 4
