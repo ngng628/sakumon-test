@@ -2,6 +2,7 @@
 
 このリポジトリがそのままサンプルとして利用できます。
 
+- リポジトリを運用する人向け => [docs/admin.md](./docs/admin.md)
 - Rimeの使い方 => [docs/rime.md](./docs/rime.md)
 - Git/GitHubの使い方 => [docs/git.md](./docs/git.md)
 

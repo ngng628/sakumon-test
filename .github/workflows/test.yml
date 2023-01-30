@@ -12,14 +12,12 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.4'
-      env:
-        ImageOS: ubuntu18
 
     - uses: actions/setup-python@v4
       with:
         python-version: '3.8'
 
-    - name: Install dependencies
+    - name: Update package list
       run: |
         sudo apt update
 
