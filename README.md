@@ -6,16 +6,11 @@
 - Rimeの使い方 => [docs/rime.md](./docs/rime.md)
 - Git/GitHubの使い方 => [docs/git.md](./docs/git.md)
 
-## 制約
-
-リポジトリは以下の制約を満たしている前提でテストを行っています。
-
-- 作問ディレクトリ直下に問題ディレクトリが存在する
-- generator / validation は C++ で記述されている
-
 ## 対応していないこと
 
 - C/C++/Ruby/Python以外の言語でのジャッジ
+- 入力のファイルが `*.in` であることの確認（できればしたい）
+- 問題文に関する校閲・HTMLのLint（できればしたいかもしれない）
 - GitHub Actions をたっっっくさん実行する
    - Private リポジトリにするので、あまりに酷使すると使えなくなります
    - https://docs.github.com/ja/billing/managing-billing-for-github-actions/about-billing-for-github-actions
