@@ -27,3 +27,4 @@
 
 4. `rime_init --git` をする
 5. 不都合がなければ `rime add . problem name` もしてあげる
+6. GitHub Actions のトリガーを適宜変更する

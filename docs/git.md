@@ -80,8 +80,16 @@ $ git push origin
 ## GitHubでプルリクエストを作成する。
 
 ブランチを新たに生やすとプルリクエストの作成を催促されます。
+Pull requests =>　New pull request でも作成できます。
 
+![プルリク解説1](./screenshot/pullreq1.png)
 
+Create pull request をクリックします。
+
+![プルリク解説2](./screenshot/pullreq2.png)
+
+プルリクのテンプレートが展開されます。
+書きたいことがなければ Create pull request をクリックします。
 
 作成すると自動テストが走り始めます。
 
