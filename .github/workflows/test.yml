@@ -28,7 +28,7 @@ jobs:
       run: sudo apt install gcc g++ -y
 
     - name: Upgrade pip
-      run: python3 -m pip --upgrade pip
+      run: python3 -m pip install --upgrade pip
 
     - name: Install Rime
       run: python3 -m pip install git+https://github.com/icpc-jag/rime
