@@ -21,7 +21,7 @@ GitHubを使うと良いです。
 
 Git・GitHubの使い方はこちら => [Git/GitHubの使い方](./git.md)
 
-> **NOTE**
+> **Note**
 > Private にすると GitHub Actions の無料枠に制限ができるので注意してください。
 > どうしても枠が足りない場合は、課金するか、トリガーを減らすなどすると良いです。
 
@@ -325,7 +325,7 @@ rime test -k
 $ rime test AC-writer
 ```
 
-> **NOTE**
+> **Note**
 > Macを使っていると g++ が clang であるせいでうまく動作しない場合があります。
 >
 > まず、g++ をインストールしてない場合は `brew install g++`
@@ -348,3 +348,4 @@ $ rime pack
 ```
 
 コマンドを実行します。rime-outディレクトリの下にatcoderという名前のディレクトリが作成され、その下のin/outに入力/出力ファイルが書き出されます。
+
