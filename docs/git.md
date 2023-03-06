@@ -44,9 +44,6 @@ $ git clone <URL>
 まず、自分の作業用ブランチに移動します。ブランチが存在しない場合は `git checkout -b a-plus-b` などで新規作成してください。
 
 ```sh
-# GitHub と同期
-$ git pull -all
-
 # ブランチ a-plus-b に移動
 $ git checkout a-plus-b
 
@@ -62,7 +59,7 @@ Rimeの使い方を参考に `rime add . problem <problem_dir_name>` などの�
 $ git status
 ```
 
-で変なファイルが対象になっていないかを確認します。
+で変なファイルが対象になっていないかを確認します。自分の意図するファイルのみが表示されていればOKです。
 
 ```sh
 $ git add .
@@ -84,8 +81,9 @@ $ git push origin
 
 ## GitHubでプルリクエストを作成する。
 
-ブランチを新たに生やすとプルリクエストの作成を催促されます。
-Pull requests =>　New pull request でも作成できます。
+Pull requests =>　New pull request でプルリクエスト作成できます。
+
+プルリクエストとは「このブランチをマージしたいんやけど、ええかいな？」というリクエストのことです。
 
 ![プルリク解説1](./screenshot/pullreq1.png)
 
