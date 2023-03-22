@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  rime:
+  rime-and-html-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -36,5 +36,12 @@ jobs:
     - name: Install Rime
       run: python3 -m pip install git+https://github.com/icpc-jag/rime
 
+    - name: Install BeautifulSoup
+      run: python3 -m pip install bs4
+
     - name: Rime test
       run: rime test --keep_going --jobs 4
+
+    - name: HTML test
+      run: python3 ./scripts/check_html.py
+
