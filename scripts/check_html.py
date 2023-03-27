@@ -49,7 +49,7 @@ def space_check(soup):
             if res:
                 raise SpaceError()
 
-    # ただし、行頭や行末は空白を開けるべきでない
+    # ただし、文頭や文末などは空白を開けるべきでない
     fwd = r'(<p>|<li>|。|、|・) '
     bwd = r' (</p>|</li>)'
     mid = r'(<code>.*</code>|\\\(.*\\\))'
@@ -59,7 +59,7 @@ def space_check(soup):
         for s in map(lambda x: str(x), text):
             res = exp.findall(s)
             if res:
-                err = r'\( \) や <code> </code> は行頭や行末の前後に空白を開けるべきではありません'
+                err = r'\( \) や <code> </code> は文頭や文末などの前後に空白を開けるべきではありません'
                 raise SpaceError(err)
 
 
