@@ -37,16 +37,30 @@ def structure_check(soup):
 
 
 def space_check(soup):
+    # 前後に空白を開けるべき
+    fwd = r'(?<!<p>)(?<!<li>)(?<!。)(?<!、)(?<!・)(?<! )'
+    bwd = r'(?! )(?!</p>)(?!</li>)'
+    mid = r'(<code>.*</code>|\\\(.*\\\))'
+    exp = re.compile(f'({fwd}{mid}|{mid}{bwd})')
     for tag in ['p', 'li']:
         text = soup.find_all(tag)
-        fwd = r'(?<!<p>)(?<!<li>)(?<!。)(?<! )'
-        bwd = r'(?! )(?!</p>)(?!</li>)'
-        mid = r'(<code>.*</code>|\\\(.*\\\))'
-        exp = re.compile(f'({fwd}{mid}|{mid}{bwd})')
         for s in map(lambda x: str(x), text):
             res = exp.findall(s)
             if res:
                 raise SpaceError()
+
+    # ただし、行頭や行末は空白を開けるべきでない
+    fwd = r'(<p>|<li>|。|、|・) '
+    bwd = r' (</p>|</li>)'
+    mid = r'(<code>.*</code>|\\\(.*\\\))'
+    exp = re.compile(f'({fwd}{mid}|{mid}{bwd})')
+    for tag in ['p', 'li']:
+        text = soup.find_all(tag)
+        for s in map(lambda x: str(x), text):
+            res = exp.findall(s)
+            if res:
+                err = r'\( \) や <code> </code> は行頭や行末の前後に空白を開けるべきではありません'
+                raise SpaceError(err)
 
 
 def main():
