@@ -26,6 +26,7 @@
    - Private リポジトリにするので、あまりに酷使すると使えなくなります
    - https://docs.github.com/ja/billing/managing-billing-for-github-actions/about-billing-for-github-actions
    - 一回のテストで5分消費するとしても400回は耐えるので、よほどのことが無い限り大丈夫だとは思います
+   - 万が一超えた場合も勝手には課金されないらしいです
 
 ## 参考情報
 - [AOJの実行環境 _ Aizu Online Judge](https://onlinejudge.u-aizu.ac.jp/system_info)
