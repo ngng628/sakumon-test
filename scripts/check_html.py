@@ -74,9 +74,15 @@ def main():
 
         with open('./HTML/' + file) as f:
             soup = BeautifulSoup(f, 'html.parser')
+            print('[INFO] CHECK: title')
             title_check(soup)
+            print('[INFO] OK')
+            print('[INFO] CHECK: structure')
             structure_check(soup)
+            print('[INFO] OK')
+            print('[INFO] CHECK: space')
             space_check(soup)
+            print('[INFO] OK')
 
 
 if __name__ == '__main__':

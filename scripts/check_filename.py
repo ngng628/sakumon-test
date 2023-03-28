@@ -8,6 +8,7 @@ def main():
     paths = [root for root, dirs, _, in os.walk('.') if 'rime-out' in dirs]
     paths = list(map(Path, paths))
 
+    print('[INFO] CHECK: extension')
     for path in paths:
         dir = path / 'rime-out' / 'tests'
         noext = [f for f in dir.glob('*') if not f.suffix]
@@ -15,6 +16,8 @@ def main():
         if noext:
             raise FileNameError()
 
+    print('[INFO] OK')
+    print('[INFO] CHECK: file denomination rule')
     for path in paths:
         dir = path / 'rime-out' / 'tests'
         ins = [f.stem for f in dir.glob('*.in')]
@@ -23,6 +26,8 @@ def main():
             if not expr.match(name):
                 msg = '先頭に番号を振るような命名にするべき'
                 raise FileNameError(msg)
+
+    print('[INFO] OK')
 
 
 if __name__ == '__main__':
