@@ -4,7 +4,14 @@ on:
   push:
     branches:
     - 'main'
+
+    paths-ignore:
+    - '**.md'
+    - 'docs/**'
   pull_request:
+    paths-ignore:
+    - '**.md'
+    - 'docs/**'
 
 jobs:
   Rime-and-HTML-test:
