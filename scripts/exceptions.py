@@ -1,3 +1,11 @@
+class FileNameError(Exception):
+    def __init__(self, msg='おそらく入力ファイル名が *.in の形式になっていません'):
+        self._msg = msg
+
+    def __str__(self):
+        return self._msg
+
+
 class TitleTagError(Exception):
     def __init__(self, msg='タイトルのみ<h2>で囲むべきです'):
         self._msg = msg
