@@ -1,4 +1,4 @@
-name: Rime test
+name: Run test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  rime-and-html-test:
+  Rime and HTML test:
     runs-on: ubuntu-latest
 
     steps:
