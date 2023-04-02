@@ -69,7 +69,7 @@ $ git commit -m "Writer作業分を追加"
 で全ての変更を Git に登録します。
 
 ```sh
-$ git push origin 
+$ git push origin  a-plus-b
 ```
 
 で変更をGitHubにアップロードします。
