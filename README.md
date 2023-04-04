@@ -32,4 +32,5 @@
 
 ## 参考情報
 - [AOJの実行環境 _ Aizu Online Judge](https://onlinejudge.u-aizu.ac.jp/system_info)
+- [`testlib.h` の `rnd.*` 系まとめ](https://codeforces.com/blog/entry/18291)
 - [`testlib.h` の `read*` 系まとめ](https://scrapbox.io/ecasdqina-cp/testlib_read_%E7%B3%BB%E3%81%BE%E3%81%A8%E3%82%81)
