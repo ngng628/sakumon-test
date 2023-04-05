@@ -84,7 +84,7 @@ $ rime add . problem AplusB
 
 となります。上のコマンドを打つと `PROBLEM` ファイルが開かれます。
 
-`reference_solution` は基準となるAC解（想定解）のディレクトリ名を記述します。
+`reference_solution` は基準となるAC解（想定解）のディレクトリ名を設定します。
 例えば `AC-writer/` が想定の場合、
 
 ```py
@@ -99,7 +99,7 @@ problem(
   #wiki_name="Your pukiwiki page name", # for wikify plugin
   #assignees=['Assignees', 'for', 'this', 'problem'], # for wikify plugin
   #need_custom_judge=True, # for wikify plugin
-  #reference_solution='AC-writer',
+  reference_solution='AC-writer',
   )
 
 atcoder_config(
