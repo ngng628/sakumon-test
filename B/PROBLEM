@@ -9,7 +9,7 @@ problem(
   #wiki_name="Your pukiwiki page name", # for wikify plugin
   #assignees=['Assignees', 'for', 'this', 'problem'], # for wikify plugin
   #need_custom_judge=True, # for wikify plugin
-  #reference_solution='???',
+  reference_solution='AC-ngng628',
   )
 
 atcoder_config(
