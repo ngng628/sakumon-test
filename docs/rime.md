@@ -119,7 +119,7 @@ $ rime add <parent_problem_dir_name> solution <solution_dir_name>
 
 で、`parent_problem_dir_name/` 下に `solution_dir_name/` というディレクトリが作成されます。
 
-例えば先ほど作成したukukuがカレントディレクトリの時に `AC-writer/` という解答用ディレクトリを作りたいなら
+例えば先ほど作成した `AplusB/` がカレントディレクトリの時に `AC-writer/` という解答用ディレクトリを作りたいなら
 
 ```sh
 $ rime add . solution AC-writer
